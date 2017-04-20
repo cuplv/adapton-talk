@@ -7,14 +7,14 @@ set ylabel font "Helvetica,10"
 set title font "Helvetica,10"
 set key font "Helvetica,10"
 
-#set border lw 3 lc rgb "white"
-#set title textcolor rgb "white"
-#set xtics textcolor rgb "white"
-#set ytics textcolor rgb "white"
-#set xlabel "X" textcolor rgb "white"
-#set ylabel "Y" textcolor rgb "white"
-#set key textcolor rgb "white"
-#set object 1 rectangle from screen 0,0 to screen 1,1 fillcolor rgb"#000000" behind
+set border lw 3 lc rgb "white"
+set title textcolor rgb "white"
+set xtics textcolor rgb "white"
+set ytics textcolor rgb "white"
+set xlabel "X" textcolor rgb "white"
+set ylabel "Y" textcolor rgb "white"
+set key textcolor rgb "white"
+set object 1 rectangle from screen 0,0 to screen 1,1 fillcolor rgb"#000000" behind
 
 set title "rev-polish-calc: Cumulative update time vs Total # changes\n{/*0.75 Initial size: 100M chars;  Gauge: 1k chars;  Edits: Random char insertions}"
 set xlabel '# Updates'
