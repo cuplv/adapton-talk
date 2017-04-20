@@ -62,4 +62,4 @@ At input size 2,000,000 (2M):
 Plots
 ------
 
-- [Crossover plot (for 1M)](rev-polish-calc--crossover-1M.pdf)
+- [Crossover plot (for 1M)](rev-polish-calc--crossover--1M.pdf)
