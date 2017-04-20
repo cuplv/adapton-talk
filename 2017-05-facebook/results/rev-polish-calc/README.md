@@ -78,3 +78,11 @@ At input size 2,000,000 (2M):
  - Adapton update time: 0.42 ms
  - Adapton cross over: 10 changes (When Adapton's update time overcomes its overhead)
  - Adapton speedup: 38.2 (Native initial time / Adapton update time)
+
+ At input size: 10000000
+ - Native initial run: 91.14 ms
+ - Adapton initial run: 1112.02 ms
+ - Adapton overhead: 12.20 (Adapton initial time / Native initial time)
+ - Adapton update time: 0.54 ms
+ - Adapton cross over: 12 changes  (When Adapton's update time overcomes its overhead)
+ - Adapton speedup: 169.13 (Native initial time / Adapton update time)
