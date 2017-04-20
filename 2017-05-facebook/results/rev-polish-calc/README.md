@@ -8,7 +8,7 @@ Input/Output Examples
  - Input "1 2 +" yields output [3]
  - Input "1 2 4 +" yields output [6, 1]
  - Input "1 2 3 4 +" yields output [7, 2, 1]
- - Input "1 2 3 4 + +" yields output [9 1]
+ - Input "1 2 3 4 + +" yields output [9, 1]
 
 Input edits
 -----------
@@ -41,7 +41,9 @@ Adapton Algorithm
 Results
 -------
 
-At input size 1,000,000:
+On a MacBook Pro (circa 2015).
+
+At input size 1,000,000 (1M):
  - Native initial run: 8.53 ms
  - Adapton initial run: 100.5 ms
  - Adapton overhead: 11.76 (Adapton initial time / Native initial time)
@@ -49,8 +51,15 @@ At input size 1,000,000:
  - Adapton cross over: 12 changes  (When Adapton's update time overcomes its overhead)
  - Adapton speedup: 20.8 (Native initial time / Adapton update time)
 
+At input size 2,000,000 (2M):
+ - Native initial run: 16.2 ms
+ - Adapton initial run: 193.7 ms
+ - Adapton overhead: 11.95 (Adapton initial time / Native initial time)
+ - Adapton update time: 0.42 ms
+ - Adapton cross over: 10 changes (When Adapton's update time overcomes its overhead)
+ - Adapton speedup: 38.2 (Native initial time / Adapton update time)
+
 Plots
 ------
 
-Crossover: XXX
-Speedup: XXX
+- [Crossover plot (for 100M)](default.pdf)
