@@ -5,7 +5,10 @@ Consumes a sequence of characters, produces a stack of integers.
 
 Input/Output Examples
 ----------------------
- - Input "1 2 3 4 + +" should yield output [9 1]
+ - Input "1 2 +" yields output [3]
+ - Input "1 2 4 +" yields output [6, 1]
+ - Input "1 2 3 4 +" yields output [7, 2, 1]
+ - Input "1 2 3 4 + +" yields output [9 1]
 
 Input edits
 -----------
