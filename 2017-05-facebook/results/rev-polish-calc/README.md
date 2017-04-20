@@ -51,14 +51,20 @@ Plots
 Summary table
 ---------------
 
- |                     | 1M         | 2M          | 10M        | Comment                                |
- |---------------------|------------|-------------|------------|----------------------------------------|
- | Native initial run  | 8.53 ms    | 16.2 ms     | 91.14 ms   |                                        |
- | Adapton initial run | 100.5 ms   | 193.7 ms    | 1112.02 ms |                                        |
- | Adapton overhead    | 11.76      | 11.95       | 12.20      | (Adapton initial time) / (Native initial time) |
- | Adapton update time | 0.41 ms    | 0.42 ms     | 0.54 ms    |                                        |
- | Adapton cross over  | ~12 changes | ~10 changes  | ~12 changes | When Adapton's update time overcomes its overhead   |
- | Adapton speedup     | 20.8       | 38.2        | 169.13     | (Native initial time) / (Adapton update time)       |
+ |                     | 1M          | 2M          | 10M         |
+ |---------------------|-------------|-------------|-------------|
+ | Native initial run  | 8.53 ms     | 16.2 ms     | 91.14 ms    |
+ | Adapton initial run | 100.5 ms    | 193.7 ms    | 1112.02 ms  |
+ | Adapton overhead    | 11.76       | 11.95       | 12.20       |
+ | Adapton update time | 0.41 ms     | 0.42 ms     | 0.54 ms     |
+ | Adapton cross over  | ~12 updates | ~10 updates | ~12 updates |
+ | Adapton speedup     | 20.8        | 38.2        | 169.13      | 
+
+Definitions
+------------
+- Adapton overhead = (Adapton initial time) / (Native initial time)
+- Adapton crossover = When Adapton's update time overcomes its overhead, measured in number of edits (updates)
+- Adapton speedup = (Native initial time) / (Adapton update time)
 
 Details
 ------------
