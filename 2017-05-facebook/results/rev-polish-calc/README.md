@@ -41,11 +41,11 @@ Adapton Algorithm
 Results
 -------
 
-At input size XXX:
- - Adapton overhead: XXX (Adapton initial time / Native initial time)
- - Adapton update time: XXX ms
- - Adapton cross over: XXX changes  (When Adapton's update time overcomes its overhead)
- - Adapton speedup: XXX (Native initial time / Adapton update time)
+At input size 1,000,000:
+ - Adapton overhead: 11.76 (Adapton initial time / Native initial time)
+ - Adapton update time: 0.41 ms
+ - Adapton cross over: 12 changes  (When Adapton's update time overcomes its overhead)
+ - Adapton speedup: 20.8 (Native initial time / Adapton update time)
 
 Plots
 ------
