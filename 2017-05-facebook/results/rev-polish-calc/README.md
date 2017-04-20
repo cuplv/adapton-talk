@@ -38,8 +38,26 @@ Adapton Algorithm
    - fold over level tree of tokens
    - accumulate a (gauged) stack of integers
 
-Results
--------
+Results summary
+----------------
+
+ |                     | 1M         | 2M          | Comment         
+ |---------------------|------------|-------------|-----------------------------------------------------|
+ | Native initial run  | 8.53 ms    | 16.2 ms     |                                                     |
+ | Adapton initial run | 100.5 ms   | 193.7 ms    |                                                     |
+ | Adapton overhead    | 11.76      | 11.95 ms    | (Adapton initial time / Native initial time)        |
+ |---------------------|------------|-------------|-----------------------------------------------------|
+ | Adapton update time | 0.41 ms    | 0.42 ms     |                                                     |
+ | Adapton cross over  | 12 changes | 10 changes  | (When Adapton's update time overcomes its overhead) |
+ | Adapton speedup     | 20.8       | 38.2        | (Native initial time / Adapton update time)         |
+
+Plots
+------
+
+- [Crossover plot (for 1M)](rev-polish-calc--crossover--1M--whitebg.pdf)
+
+Results: Detailed list
+------------------------
 
 On a MacBook Pro (circa 2015).
 
@@ -58,23 +76,3 @@ At input size 2,000,000 (2M):
  - Adapton update time: 0.42 ms
  - Adapton cross over: 10 changes (When Adapton's update time overcomes its overhead)
  - Adapton speedup: 38.2 (Native initial time / Adapton update time)
-
-Results summary
-----------------
-
- |                     | 1M       | 2M          |
- |---------------------|----------|-------------|
- | Native initial run  | 8.53 ms  | 16.2 ms     |
- | Adapton initial run | 100.5 ms | 193.7 ms    |
- | Adapton overhead    | 11.76    | 11.95 ms    |
- | (Adapton initial time / Native initial time) |
- | Adapton update time | 0.41 ms    | 0.42 ms    |
- | Adapton cross over  | 12 changes | 10 changes |
- | (When Adapton's update time overcomes its overhead) | | |
- | Adapton speedup    |  20.8 | 38.2           |
- | (Native initial time / Adapton update time) | | |
-
-Plots
-------
-
-- [Crossover plot (for 1M)](rev-polish-calc--crossover--1M--whitebg.pdf)
