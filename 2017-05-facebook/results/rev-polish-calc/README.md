@@ -45,11 +45,10 @@ Results summary
  |---------------------|------------|-------------|-----------------------------------------------------|
  | Native initial run  | 8.53 ms    | 16.2 ms     |                                                     |
  | Adapton initial run | 100.5 ms   | 193.7 ms    |                                                     |
- | Adapton overhead    | 11.76      | 11.95 ms    | (Adapton initial time / Native initial time)        |
- |---------------------|------------|-------------|-----------------------------------------------------|
+ | Adapton overhead    | 11.76      | 11.95       | (Adapton initial time) / (Native initial time)      |
  | Adapton update time | 0.41 ms    | 0.42 ms     |                                                     |
- | Adapton cross over  | 12 changes | 10 changes  | (When Adapton's update time overcomes its overhead) |
- | Adapton speedup     | 20.8       | 38.2        | (Native initial time / Adapton update time)         |
+ | Adapton cross over  | 12 changes | 10 changes  | When Adapton's update time overcomes its overhead   |
+ | Adapton speedup     | 20.8       | 38.2        | (Native initial time) / (Adapton update time)       |
 
 Plots
 ------
