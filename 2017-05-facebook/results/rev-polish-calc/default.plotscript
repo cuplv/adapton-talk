@@ -1,14 +1,27 @@
+set output 'rev-polish-calc--crossover--1M.pdf'
+
 set terminal pdf
-set output 'out.pdf'
-set title "Accumulating time to insert element(s) and parse\n(s)ize: 1000000, (g)auge: 1000, (n)ame-gauge: 1, (e)dit-batch: 1"
-set xlabel '(c)hanges'
-set ylabel 'Time(ms)'
+set termoption enhanced
+set tics font "Helvetica,10"
+set xlabel font "Helvetica,10"
+set ylabel font "Helvetica,10"
+set title font "Helvetica,10"
+set key font "Helvetica,10"
+
+set title "rev-polish-calc: Cumulative update time vs Total # changes\n{/*0.75 Initial size: 100M chars; Gauge: 1k chars; Edits: Random char insertions}"
+set xlabel 'Changes'
+set ylabel 'Time (ms)'
 set key left top box
+
+set style line 1 lw 10 ps 2 lc "#ff8888"
+set style line 2 lw 10 ps 2 lc "#8800ff"
+
 set grid ytics mytics  # draw lines for each ytics and mytics
 set grid xtics mxtics  # draw lines for each xtics and mxtics
 set mytics 5           # set the spacing for the mytics
 set mxtics 5           # set the spacing for the mxtics
 set grid               # enable the grid
+
 plot \
-'default.dat' i 0 u 1:($3+$4) t 'Non-incremental Parse Time' with linespoints,\
-'default.dat' i 1 u 1:($3+$4) t 'Incremental Parse Time' with linespoints,\
+'default.dat' i 0 u 1:($3+$4) ls 1 t 'Native' with linespoints,\
+'default.dat' i 1 u 1:($3+$4) ls 2 t 'Adapton' with linespoints,\
