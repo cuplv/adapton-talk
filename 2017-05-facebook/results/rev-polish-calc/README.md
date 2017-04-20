@@ -1,0 +1,51 @@
+Adapton Benchmark: Reverse Polish Calculator
+============================================
+
+Consumes a sequence of characters, produces a stack of integers.
+
+Input/Output Examples
+----------------------
+ - Input "1 2 3 4 + +" should yield output [9 1]
+
+Input edits
+-----------
+ - Randomly select position in input string, and insert new characters (either [0-9], or "+")
+
+Native ("Idiomatic Rust") Algorithm
+-------------------------------------
+ - Tokenize input character sequence:
+    - input is a Rust vector of characters
+    - iterate over vector
+    - accumulate a vector of tokens
+ - Evaluate token sequence:
+    - input is a vector of tokens
+    - iterate over vector
+    - accumulate a stack, as a vector of integers
+
+Adapton Algorithm
+-------------------
+ - Tokenize input character sequence:
+   - input is RAZ, as a (gauged) level tree of characters
+   - fold over level tree of characters
+   - accumulate a (gauged) stack of tokens
+   - each token is either an integer, or a binary operation (+)
+ - Create (gauged) level tree of tokens
+ - Evaluate token sequence:
+   - input is level tree of tokens
+   - fold over level tree of tokens
+   - accumulate a (gauged) stack of integers
+
+Results
+-------
+
+At input size XXX:
+ - Adapton overhead: XXX (Adapton initial time / Native initial time)
+ - Adapton update time: XXX ms
+ - Adapton cross over: XXX changes  (When Adapton's update time overcomes its overhead)
+ - Adapton speedup: XXX (Native initial time / Adapton update time)
+
+Plots
+------
+
+Crossover: XXX
+Speedup: XXX
