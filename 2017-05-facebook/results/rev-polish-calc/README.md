@@ -38,8 +38,18 @@ Adapton Algorithm
    - fold over level tree of tokens
    - accumulate a (gauged) stack of integers
 
-Results summary
-----------------
+Empirical Results
+=================
+
+We gathered all time measurements below on a MacBook Pro (circa 2015).
+
+Plots
+------
+
+- [Crossover plot (for 1M)](rev-polish-calc--crossover--1M--whitebg.pdf)
+
+Summary table
+---------------
 
  |                     | 1M         | 2M          | Comment         
  |---------------------|------------|-------------|-----------------------------------------------------|
@@ -50,15 +60,8 @@ Results summary
  | Adapton cross over  | 12 changes | 10 changes  | When Adapton's update time overcomes its overhead   |
  | Adapton speedup     | 20.8       | 38.2        | (Native initial time) / (Adapton update time)       |
 
-Plots
-------
-
-- [Crossover plot (for 1M)](rev-polish-calc--crossover--1M--whitebg.pdf)
-
-Results: Detailed list
-------------------------
-
-On a MacBook Pro (circa 2015).
+Details
+------------
 
 At input size 1,000,000 (1M):
  - Native initial run: 8.53 ms
