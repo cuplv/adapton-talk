@@ -1,7 +1,9 @@
 Adapton Benchmark: Reverse Polish Calculator
 ============================================
 
-Consumes a sequence of characters, produces a stack of integers.
+Consumes a sequence of characters in [reverse polish
+notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation), and
+produces a stack of integers as a result.
 
 Input/Output Examples
 ----------------------
