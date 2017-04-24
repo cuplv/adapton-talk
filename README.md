@@ -5,10 +5,10 @@ Benchmark Results
 -----------------
 
 - Sequences: micro benchmarks:
- - [Sequence reverse](2017-05-facebook/results/seq-reverse/): Reverses a sequence of XXXs (machine words?)
+  - [Sequence reverse](2017-05-facebook/results/seq-reverse/): Reverses a sequence of XXXs (machine words?)
 
 - Micro applications:
- - [Reverse Polish Calculator](2017-05-facebook/results/rev-polish-calc/): Evaluates character strings using a simple stack machine semantics.
+  - [Reverse Polish Calculator](2017-05-facebook/results/rev-polish-calc/): Evaluates character strings using a simple stack machine semantics.
 
 Public Talks
 -------------
