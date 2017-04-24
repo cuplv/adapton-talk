@@ -1,18 +1,20 @@
 Adapton Benchmark: Reverse a Sequence
 ============================================
 
+Sequence microbenchmark: Reverse a sequence of changing input.
+
 Input edits
 -----------
  - Randomly insert a new integer
 
 Native ("Idiomatic Rust") Algorithm
 -------------------------------------
- - call reverse() on Vec
+ - call [reverse](https://doc.rust-lang.org/std/vec/struct.Vec.html#method.reverse) on a [Vec](https://doc.rust-lang.org/std/vec/struct.Vec.html).
 
 Adapton Algorithm
 -------------------
- - Create tree of sequence
- - fold up through tree, reversing branches
+ - Create a level tree of a sequence
+ - fold over the tree structure (folding "upwards"), reversing branches
 
 Empirical Results
 =================
