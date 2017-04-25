@@ -12,6 +12,8 @@ Input/Output Examples
  - Input "1 2 3 4 +" yields output [7, 2, 1]
  - Input "1 2 3 4 + +" yields output [9, 1]
 
+See also: [XKCD](https://xkcd.com/645/).
+
 Input edits
 -----------
  - Randomly select position in input string, and insert new characters (either [0-9], or "+")
