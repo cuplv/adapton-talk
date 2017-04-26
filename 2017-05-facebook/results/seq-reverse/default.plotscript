@@ -1,6 +1,6 @@
 set terminal pdf
 set output 'default.pdf'
-set title "Cumulative time to insert element(s) and reverse\n(s)ize: 1000000, (g)auge: 1000, (n)ame-gauge: 1, (e)dit-batch: 1"
+set title "Cumulative time to reverse a sequence after inserting element(s)\n(s)ize: 1000000, (g)auge: 1000, (n)ame-gauge: 1, (e)dit-batch: 1"
 set xlabel '(c)hanges'
 set ylabel 'Time(ms)'
 set key left top box
