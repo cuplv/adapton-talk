@@ -11,6 +11,7 @@ Input/Output Examples
  - Input "1 2 4 +" yields output [6, 1]
  - Input "1 2 3 4 +" yields output [7, 2, 1]
  - Input "1 2 3 4 + +" yields output [9, 1]
+ - Input "1 2 + 3 4 +" yields output [7, 3]
 
 See also: [XKCD](https://xkcd.com/645/).
 
@@ -33,10 +34,9 @@ Adapton Algorithm
 -------------------
  - Tokenize input character sequence:
    - input is RAZ, as a (gauged) level tree of characters
-   - fold over level tree of characters
-   - accumulate a (gauged) stack of tokens
-   - each token is either an integer, or a binary operation (+)
- - Create (gauged) level tree of tokens
+   - fold sequentially, left to right, over level tree of characters
+   - accumulate a (gauged) stack of tokens; each token is either an integer, or a binary operation (+)
+ - Create (gauged) level tree of tokens from token stack
  - Evaluate token sequence:
    - input is level tree of tokens
    - fold over level tree of tokens
