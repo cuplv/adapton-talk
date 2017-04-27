@@ -20,5 +20,5 @@ Source Code
 --------------
 The following projects constitute the current Adapton ecosystem; each is written in Rust:
 - [Adapton](http://github.com/cuplv/adapton.rust): Engine maintaining program dependence information; exposes a core programming API, used by our collections library ([IODyn](http://github.com/cuplv/iodyn.rust)), and eventually, other applications written in Rust.
-- [IODyn](http://github.com/cuplv/adapton.rust): Collections library for applications with dynamic input and output.
+- [IODyn](http://github.com/cuplv/iodyn.rust): Collections library for applications with dynamic input and output.
 - [Adapton Lab](http://github.com/cuplv/adapton-lab.rust): Systematic testing and evaluation framework for Adapton benchmarks and micro applications.
