@@ -12,7 +12,7 @@ Native ("Idiomatic Rust") Algorithm
 Adapton Algorithm
 -------------------
  - Create tree of sequence
- - call iter().max() on subsequences, combine into tree
+ - call iter().max() on subsequences, fold results up tree
 
 Empirical Results
 =================
@@ -34,7 +34,7 @@ At input size: 1000000
  - Adapton update time: 0.05 ms avg over the first 30 changes
  - Adapton cross over: 2 changes  (When Adapton's update time overcomes its overhead)
  - Adapton speedup: 61.55 (Native initial time / Adapton update time)
- 
+
 At input size: 2000000
  - Native initial run: 5.64 ms
  - Adapton initial run: 12.52 ms
