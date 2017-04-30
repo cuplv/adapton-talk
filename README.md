@@ -14,7 +14,7 @@ Benchmark Results
 
 Public Talks
 -------------
-- [Facebook (May, 2017)](2017-05-facebook)
+_Coming soon!_
 
 Source Code
 --------------
