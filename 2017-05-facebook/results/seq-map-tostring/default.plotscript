@@ -1,0 +1,14 @@
+set terminal pdf
+set output 'default.pdf'
+set title "Cumulative time to map elements to strings after inserting element(s)\n(s)ize: 1000000, (g)auge: 1000, (n)ame-gauge: 1, (e)dit-batch: 1"
+set xlabel '(c)hanges'
+set ylabel 'Time(ms)'
+set key left top box
+set grid ytics mytics  # draw lines for each ytics and mytics
+set grid xtics mxtics  # draw lines for each xtics and mxtics
+set mytics 5           # set the spacing for the mytics
+set mxtics 5           # set the spacing for the mxtics
+set grid               # enable the grid
+plot \
+'default.dat' i 0 u 1:3 t 'Non-incremental Compute Time' with linespoints,\
+'default.dat' i 1 u 1:3 t 'Incremental Compute Time' with linespoints,\
