@@ -23,6 +23,11 @@ Plots
 ------
 
 - [Crossover plot (for 1M)](default.pdf)
+- generate a plot
+  - install `gnuplot`
+  - clone `https://github.com/cuplv/iodyn.rust`
+  - `cd eval`
+  - `cargo run --release --example to_string`
 
 Details
 ------------
