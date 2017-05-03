@@ -1,0 +1,42 @@
+set output 'seq-map-tostring--gauges--1M--blackbg.pdf'
+
+set terminal pdf enhanced
+set tics font "Helvetica,10"
+set xlabel font "Helvetica,10"
+set ylabel font "Helvetica,10"
+set title font "Helvetica,10"
+set key font "Helvetica,10"
+
+set border lw 3 lc rgb "white"
+set title textcolor rgb "white"
+set xtics textcolor rgb "white"
+set ytics textcolor rgb "white"
+set xlabel "X" textcolor rgb "white"
+set ylabel "Y" textcolor rgb "white"
+set key textcolor rgb "white"
+set object 1 rectangle from screen 0,0 to screen 1,1 fillcolor rgb"#000000" behind
+
+set title "seq-map-tostring: Cumulative update time vs Total # changes\n{/*0.75 Initial size: 1M chars;  Edits: Random integer insertions}"
+set xlabel '# Updates'
+set ylabel 'Time (ms)'
+set key left top box
+
+set style line 1 lw 5 ps 2 lc "#ff8888"
+set style line 2 lw 5 ps 2 lc "#8855ff"
+set style line 3 lw 3 ps 2 lc "#55ff88"
+set style line 4 lw 5 ps 2 lc "#ff88ff"
+
+set grid ytics mytics  # draw lines for each ytics and mytics
+set grid xtics mxtics  # draw lines for each xtics and mxtics
+set mytics 5           # set the spacing for the mytics
+set mxtics 5           # set the spacing for the mxtics
+set grid               # enable the grid
+
+plot \
+'gauges.dat' i 0 u 1:3 ls 1 t 'Native' with linespoints,\
+'gauges.dat' i 1 u 1:3 ls 2 t 'Adapton gauge 10' with linespoints,\
+'gauges.dat' i 2 u 1:3 t 'Adapton gauge 100' with linespoints,\
+'gauges.dat' i 3 u 1:3 ls 3 t 'Adapton gauge 1k' with linespoints,\
+'gauges.dat' i 4 u 1:3 t 'Adapton gauge 10k' with linespoints,\
+'gauges.dat' i 5 u 1:3 ls 4 t 'Adapton gauge 100k' with linespoints,\
+'gauges.dat' i 6 u 1:3 t 'Adapton gauge 1M' with linespoints,\

@@ -51,6 +51,11 @@ Plots
 ------
 
 - [Crossover plot (for 1M)](rev-polish-calc--crossover--1M--whitebg.pdf)
+- generate a plot
+  - clone `https://github.com/cuplv/iodyn.rust`
+  - install `gnuplot`
+  - `cd eval`
+  - `cargo run --release --example adder`
 
 Summary table
 ---------------
