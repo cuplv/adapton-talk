@@ -15,7 +15,8 @@ Benchmark Results
 
 Public Talks
 -------------
-_Coming soon!_
+
+- [Incremental Computation with Adapton](2017-05-04--plemm-at-facebook/Adapton_PLEMM_2017_05_04.pdf) -- on May 4, 2017, at [PLEMM 2017 -- Facebook](https://plemm.splashthat.com/).
 
 Source Code
 --------------
