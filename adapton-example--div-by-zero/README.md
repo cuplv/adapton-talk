@@ -7,7 +7,7 @@ Initial Graph, before initial demand
 ----------------------------------------------
 ![Slide 05](Adapton_Avoiddivbyzero_05.png)
 
-Initial Graph, before initial demand (due to 1st `get`)
+Initial Graph, after initial demand (due to 1st `get`)
 ------------------------------------------------------
 ![Slide 10](Adapton_Avoiddivbyzero_10.png)
 
