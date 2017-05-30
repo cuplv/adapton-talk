@@ -26,8 +26,3 @@ Dirtied graph, after second dirtying phase (due to 2nd `set`)
 Updated graph, after second cleaning phase (due to 3rd `get`)
 ---------------------------------------------------------
 ![Slide 23](Adapton_Avoiddivbyzero_23.png)
-
-
-As a movie:
--------------
-![All Slide Key Frames](Adapton_Avoiddivbyzero.png)
